@@ -1,0 +1,133 @@
+Web Services
+	Communication between client nd server.
+	Client : front end angular,html,xml
+	server : java
+	an application can communicate with other application developed in any language.
+Types : 
+	SOAP - It is an XML-based protocol for accessing web services.(Simple Object Access Protocol)
+	RESTful - It is an architectural style, not a protocol.(REpresentational State Transfer.)
+SOAP:
+Advantages : 
+	Language and Platform independent
+	its own security known as WS Security
+Cons:
+	SDL dependent
+ 	slow and consumes more bandwidth and resource
+RESTful : 
+Pros:
+	Fast,consumes less bandwidth and resource
+	Can use SOAP
+	Permits different data format(plain text,html,xml,json)
+	Language and Platform independent
+
+Hibernate :
+	Simplifies Java application to interact with the database
+	ORM tool simplifies the data creation, data manipulation and data access. 
+	Programming technique that maps the object to the data stored in the database.
+	JDBC API to interact with the database.
+Pros:
+	Open Source and Lightweight
+	Simplifies Complex Join
+	Provides Query Statistics and Database Status
+	Automatic Table Creation
+	Database Independent Query
+	Fast Performance
+
+JDBC API:
+	help of JDBC API, we can save, update, delete and fetch data from the database.
+	java.sql package contains classes and interfaces for JDBC API.
+Classes Types:
+	DriverManager class
+	Blob class
+	Clob class
+	Types class
+Interface Types:
+	Driver interface
+	Connection interface
+	Statement interface
+	PreparedStatement interface()
+	CallableStatement interface
+	ResultSet interface(from statement -> getresultset)
+	ResultSetMetaData interface(from statement -> getresultset-> from resultset-> get resultset metadata)
+	DatabaseMetaData interface
+	RowSet interface
+DriverManager : 
+	keeps track of the drivers that are available and handles establishing a connection between a database and the appropriate driver
+	registerDriver,DeregisterDriver,GetConnection.
+
+Connection interface:
+	session between java application and database
+        factory of Statement, PreparedStatement, and DatabaseMetaData.
+
+Statement interface:
+	methods to execute queries with the database.
+	factory of ResultSet
+
+PreparedStatement interface:
+	PreparedStatement stmt=con.prepareStatement("insert into Emp values(?,?)");  
+	stmt.setInt(1,101);//1 specifies the first parameter in the query  
+
+CallableStatement interface:
+	business logic on the database by the use of stored procedures and functions.
+	better because precompiled.
+
+ResultSetMetaData interface:
+	further information from the data.
+	PreparedStatement ps=con.prepareStatement("select * from emp");  
+	ResultSet rs=ps.executeQuery();  
+	ResultSetMetaData rsmd=rs.getMetaData(); 
+(getColumnName,getColumnTypeName,getColumnCount())
+
+DatabaseMetaData interface:
+	get meta data of a database such as database product name, 
+database product version, driver name, name of total number of tables, name of total number of views etc
+
+RowSet interface:
+//Creating and Executing RowSet  
+        JdbcRowSet rowSet = RowSetProvider.newFactory().createJdbcRowSet();  
+        rowSet.setUrl("jdbc:oracle:thin:@localhost:1521:xe");  
+        rowSet.setUsername("system");  
+        rowSet.setPassword("oracle");  
+        rowSet.setCommand("select * from emp400");  
+        rowSet.execute();  
+
+Why Should We Use JDBC?
+	ODBC API uses ODBC driver which is written in C language (i.e. platform dependent and unsecured
+	Java has defined its own API (JDBC API) that uses JDBC drivers (written in Java language).
+
+
+DBUnit dependencies:
+	DBUnit provides a declarative way of defining test data to test data access layers of Java applications.
+	If DBUnit finds an incorrect value, then it immediately throws an AssertionError.
+
+SLF4J-API:
+	To use logger statement ,use slf4j dependency
+
+LomboK:
+	@ data,getter,setter,noargsconstructor annotation
+	 it can generate getters and setters for those object automatically by using Lombok annotations
+Junit Test:
+	only used for testing
+	annotate it with the @Test annotation.
+	"Test" suffix at the end of test classes names.
+	assertion statement - allow you to specify the error message, the expected and the actual result.
+eg : assertNull,assertNotNull,assertEquals,assertFalse,assertTrue,assertSame,assertNotSame
+
+Entity To DTO Conversion - Model Mapper
+spring-test :
+spring-context:
+spring-beans:
+
+
+Spring :
+	Predefined Templates Spring framework provides templates for JDBC, Hibernate, JPA etc. technologies. 
+So there is no need to write too much code. It hides the basic steps of these technologies.
+
+
+reference iD: 9904532
+senior manager : Amit sharma
+HR Executive : Pooja
+backend office : swetha
+30-45 days job opportunity
+18001213704
+document verification,prms assitance
