@@ -18,6 +18,7 @@ public class Babyproductssearchcontroller {
 	
 	@RequestMapping(value ="/getList", method=RequestMethod.GET)
 	public Babyproductsentity getList(@RequestParam(name = "query", required = false) String searchQuery){
+		babyproductssearchservice.getAllProduct();
 		return new Babyproductsentity();
 	}
 	

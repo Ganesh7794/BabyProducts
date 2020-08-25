@@ -1,5 +1,16 @@
 package babyproductsmain.service.impl;
 
-public class Babyproductssearchserviceimpl {
+import babyproductsmain.dao.Babyproductsdao;
+import babyproductsmain.entity.Babyproductsentity;
+import babyproductsmain.service.Babyproductssearchservice;
+
+public class Babyproductssearchserviceimpl implements Babyproductssearchservice {
+
+	private final Babyproductsdao babyproductsdao;
+	
+	@Override
+	public Babyproductsentity getAllProduct() {
+		return babyproductsdao.getAllProduct();
+	}
 	
 }

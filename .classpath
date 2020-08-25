@@ -7,5 +7,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/Ganesh Eswaran/AppData/Local/Microsoft/Windows/INetCache/IE/U7O2NQ78/spring-web-4.3.9.RELEASE[1].jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ganesh Eswaran/Downloads/lombok.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
