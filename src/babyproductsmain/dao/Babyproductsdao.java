@@ -6,4 +6,6 @@ public interface Babyproductsdao {
 
 	Babyproductsentity getAllProduct();
 	
+	void createTable();
+	
 }

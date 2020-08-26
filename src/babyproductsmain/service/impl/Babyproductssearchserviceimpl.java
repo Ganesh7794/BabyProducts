@@ -6,7 +6,7 @@ import babyproductsmain.service.Babyproductssearchservice;
 
 public class Babyproductssearchserviceimpl implements Babyproductssearchservice {
 
-	private final Babyproductsdao babyproductsdao;
+	private Babyproductsdao babyproductsdao;
 	
 	@Override
 	public Babyproductsentity getAllProduct() {

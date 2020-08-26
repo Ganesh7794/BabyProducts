@@ -7,6 +7,9 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/Ganesh Eswaran/AppData/Local/Microsoft/Windows/INetCache/IE/U7O2NQ78/spring-web-4.3.9.RELEASE[1].jar"/>
-	<classpathentry kind="lib" path="C:/Users/Ganesh Eswaran/Downloads/lombok.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ganesh Eswaran/Documents/jar downloads/lombok.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ganesh Eswaran/Documents/jar downloads/spring-jdbc-2.5.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ganesh Eswaran/AppData/Local/Microsoft/Windows/INetCache/IE/R71DSFIE/spring-beans-4.3.9.RELEASE[1].jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ganesh Eswaran/AppData/Local/Microsoft/Windows/INetCache/IE/TB1Z9GH5/spring-dao-2.0.6[1].jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
